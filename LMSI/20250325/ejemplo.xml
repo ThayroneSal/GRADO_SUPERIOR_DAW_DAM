@@ -1,0 +1,72 @@
+<?xml vesion="1.0" encoding = "UTF-8"?>
+
+<!-- Primera introduccion a XML-->
+
+<catalago>
+    <accion año = "2006">
+            <titulo>Fast and Furios - Tokio drift</titulo>
+            <director>Gary Scott </director>
+    </accion>
+
+    <miedo año = "2007">
+            <titulo>Paranormal Activity</titulo>
+            <autor>Oren Peli</autor>
+    </miedo>
+</catalago>
+
+<videoclub>
+        <pelicula año = "2000">
+            <titulo>El señor de los anillos</titulo>
+            <genero>Fantasía</genero>
+        </pelicula>
+        <pelicula año = "2001">
+            <titulo>Harry Potter</titulo>
+            <genero>Fantasía</genero>
+        </pelicula>
+        <pelicula año = "2002">
+            <titulo>Spiderman</titulo>
+            <genero>Ciencia Ficción</genero>
+        </pelicula>
+        <pelicula año = "2003">
+            <titulo>Matrix</titulo>
+            <genero>Ciencia Ficción</genero>
+        </pelicula>
+    </videoclub>
+
+    <plataforma>
+            <pelicula>
+                <titulo>El señor de los anillos</titulo>
+                <director>Peter Jackson</director>
+                <año>2001</año>
+            </pelicula>
+            <pelicula>
+                <titulo>El club de la lucha</titulo>
+                <director>David Fincher</director>
+                <año>1999</año>
+            </pelicula>
+            <pelicula>
+                <titulo>Star Wars: Episodio IV - Una nueva esperanza</titulo>
+                <director>George Lucas</director>
+                <año>1977</año>
+            </pelicula>
+            <pelicula>
+                <titulo>Clerks</titulo>
+                <director>Kevin Smith</director>
+                <año>1994</año>
+            </pelicula>
+            <pelicula>
+                <titulo>El Padrino</titulo>
+                <director>Francis Ford Coppola</director>
+                <año>1972</año>
+            </pelicula>
+            <pelicula>
+                <titulo>Fantastic Mr. Fox</titulo>
+                <director>Wes Anderson</director>
+                <año>2009</año>
+            </pelicula>
+            <pelicula>
+                <titulo>El viaje de Chihiro</titulo>
+                <director>Hayao Miyazaki</director>
+                <año>2001</año>
+            </pelicula>
+    </plataforma>

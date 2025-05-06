@@ -1,0 +1,19 @@
+<!-- TIPO DE DATOS
+DTD -> (LIMITADOS) (#PCDATA) tipo texto, EMPTY tipo vacío, ANY cualquier cosa.
+XSD -> (AVANZADOS) String, date, decimal, etc
+
+VALIDACIONES COMPLEJAS
+DTD -> no tenemos validaciones complejas
+XSD -> si posee validaciones complejas ( longitud, patrones, rangos) -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="catalogo.xsd">
+</xs:schema>
+
+
+RESTRICCIONES Y VALIDACIONES
+Validacion con patrón
+<xs:simpleType name="dni">
+    <xs:restiction base="xs:string">
+        <xs:pattern value="[0-9]{8}[A-Z]"/>

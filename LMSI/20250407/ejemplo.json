@@ -1,0 +1,88 @@
+{
+    "nombre":"Luis",
+    "edad": 29,
+    "activo": true,
+    "hobbies": ["deporte", "videojuegos", "Dormir"], //para los arrays siempre usamos []
+    "direccion":{    //para los objetos se usa {}
+        "calle": "Desengaño",
+        "numero": 21,
+        "ciudad": "Madrid"
+    },
+    "telefono": null
+}
+
+// Tipos de datos:
+// cadenas de texto (string) "nombre": "Luis" Siempre entre comillas dobles
+// Números "edad": 29 Enteros, decimales ...
+// Booleano "activo": trueTrue o false Siempre sin comillas dobles.
+// Array (lista) "hobbies": ["deporte", "videojuegos", "Dormir"] lista de valores
+// Objetos "direccion":{"calle": "Desengaño", "numero": 21, "ciudad": "Madrid" } Conjunto de valores con CLave-Valores
+// Null "telefono": null Representa un valor nulo o desconocido.
+
+
+
+{
+    "id": 12586,
+    "fechaPedido": "Doce de Abril",
+    "cliente": {
+        "nombre": "Pepe",
+        "email": "pepe@gmail.com",
+        "direccion":{
+            "calle": "federico",
+            "ciudad": "huelva",
+            "codigoPostal": 41008
+        }
+    },
+    "productos": [{
+        "nombre": "ps5",
+        "cantidad": 2,
+        "precio": 500
+    }
+    {
+        "nombre": "switch2",
+        "cantidad": 1,
+        "precio": 470
+    }
+],
+    "tipoEnvio": true,
+    "estado": null,
+    "total": 1470
+
+}
+
+-----------------------------------------------------------
+{
+    "pedido online": {
+        "id": 1,
+        "fecha-pedido": "2023-10-01",
+        "cliente" {
+            "nombre": "Juan Pérez",
+            "email": "juanperez@email.com",
+            "direccion": {
+                "calle": "Av. Libertador",
+                "ciudad": "Murcia",
+                "codigo-postal": "30001"
+            }
+        },
+        "productos": [
+            {
+                "id": 101,
+                "nombre": "Laptop",
+                "cantidad": 1,
+                "precio-unitario": 1200.00
+            },
+            {
+                "id": 102,
+                "nombre": "Mouse",
+                "cantidad": 2,
+                "precio-unitario": 25.00
+            }
+        ],
+        "envio-urgente": true,
+        "estado-pedido":[
+            "pendiente",
+            "enviado",
+            "entregado"
+        ]
+    }
+}

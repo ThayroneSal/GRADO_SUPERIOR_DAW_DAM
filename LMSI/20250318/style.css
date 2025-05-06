@@ -1,0 +1,38 @@
+.container {
+    width: 80%;
+   }
+   
+   @media (max-width:768px){
+       .container{
+           width: 95%;
+       }
+   }
+   
+   @media(max-width: 768px){
+       .container{
+           width:600px;
+       }
+   }
+   
+    .container{
+    width: 1200px;
+   }
+   
+   .box {
+       width: 100%;
+       max-width: 1200px;
+       min-width: 300px;
+       background: lightblue;
+     }
+   
+     @media (max-width: 600px) {
+       .container {
+         background: blue;
+       }
+     }
+     
+     @media (min-width: 800px) {
+       .container {
+         background: green;
+       }
+     }

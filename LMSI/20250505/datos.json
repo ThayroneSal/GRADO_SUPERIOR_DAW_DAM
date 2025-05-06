@@ -1,0 +1,12 @@
+{"id":12123,
+"titulo":"dsf",
+"autor":"qwqe",
+"precio": 123,
+"año":1223,
+"listado_ediciones":[
+    {
+        "nombre_edicion":"asda",
+        "fecha": "2025-07-31"
+    }
+    ]
+}

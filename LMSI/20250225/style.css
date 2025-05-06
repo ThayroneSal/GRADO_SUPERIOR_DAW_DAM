@@ -1,0 +1,83 @@
+/* 1. Reset básico: elimina márgenes y paddings para evitar comportamientos inesperados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 2. Estilos generales para el body */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /* Mejora la lejibilidad del texto*/
+    background-color: #fafafa;
+  }
+  
+  /* 3. Estilos para el header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Navegación en el header: menú horizontal centrado */
+  header nav ul {
+    list-style: none; /*Eliminar los puntos de la lista*/
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* 4. Estilos para el main: contenedor flexible usando porcentajes */
+  main {
+    display: flex;
+    width: 90%;           /* Ocupa el 90% del ancho del viewport */
+    max-width: 1200px;    /* Ancho máximo para que no se extienda demasiado en pantallas grandes */
+    margin: 20px auto;    /* Centrado horizontal y espacio superior/inferior */
+  }
+  
+  /* Estilos para la sección de contenido principal */
+  .contenido {
+    width: 70%;           /* El 70% del ancho del main */
+    padding: 20px;
+  }
+  
+  /* Estilos para la barra lateral */
+  .sidebar {
+    width: 30%;           /* El 30% del ancho del main */
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  /* 5. Estilos para el footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* 6. Media Queries: Adaptación para dispositivos con pantalla pequeña */
+  @media (max-width: 768px) {
+    /* Cambia la dirección del contenedor principal a vertical */
+    main {
+      flex-direction: column;
+    }
+    
+    /* Cada sección ocupará el 100% del ancho */
+    .contenido, .sidebar {
+      width: 100%;
+    }
+    
+    /* Opcional: Ajuste de márgenes o paddings si es necesario */
+  }  
+

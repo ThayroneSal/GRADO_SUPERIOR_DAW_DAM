@@ -1,0 +1,14 @@
+
+<!DOCTYPE repuestos [
+<!ELEMENT repuestos (repuesto)*>
+<!ELEMENT repuesto (id_pieza, nombre, fabricante,precio)>
+
+<!ELEMENT id_pieza (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fabricante (nombre_fabricante, país)>
+
+<!ELEMENT nombre_fabricante (#PCDATA)>
+<!ELEMENT país (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST repuesto id ID #REQUIRED>
+]>

@@ -1,0 +1,46 @@
+eventos:
+- nombreConcierto: LocosChalados
+  fecha: 03_Abril_2025
+  ubicacion:
+    ciudad: Sevilla  #para hacerlo en objeto va por cascada
+    lugar: Cartuja
+  precio: 50
+  gratuito: false
+  categoria:
+  - Eletronica  #para hacer con array se usa el (-)
+  - Rock
+  - POP
+  Artista:
+  - nombre: Fernando  #para hacer varios categorias dentro por ejemplo los artistas usamos (-) array y la casgada como se ve.
+    categoria: Eletronica
+  - nombre: Antonio
+    categoria: Rock
+  - nombre: Ana
+    categoria: POP
+  estadoEvento:
+  - pendiente
+  - confirmado
+  - null
+# para duplicarlo lo hacemos en cascada y con array como podemos ver
+  - nombreConcierto: LocosChalados
+  fecha: 03_Abril_2025
+  ubicacion:
+    ciudad: Sevilla
+    lugar: Cartuja
+  precio: 50
+  gratuito: false
+  categoria:
+  - Eletronica
+  - Rock
+  - POP
+  Artista:
+  - nombre: Fernando
+    categoria: Eletronica
+  - nombre: Antonio
+    categoria: Rock
+  - nombre: Ana
+    categoria: POP
+  estadoEvento:
+  - pendiente
+  - confirmado
+  - null

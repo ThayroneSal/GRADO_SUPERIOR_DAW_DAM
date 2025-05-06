@@ -1,0 +1,12 @@
+Crear un elemento raiz
+<!ELEMENT libros (libro)*>
+<!ELEMENT libro (titulo,autor,precio,año)>
+
+Columnas simples -> elementos con #PCDATA
+<!ELEMENT titulo (#PCDATA)>
+
+Columnas compuestas -> elementos anidados
+<!ELEMENT autores (autor)+>
+<!ELEMENT autor (nombre, apellido)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>

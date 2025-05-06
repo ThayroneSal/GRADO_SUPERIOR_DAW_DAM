@@ -1,0 +1,33 @@
+
+{
+    "eventos":[
+      {
+            "nombreConcierto": "LocosChalados",
+            "fecha": "03_Abril_2025",
+            "ubicacion":{
+                "ciudad": "Sevilla",
+                "Lugar": "Cartuja"
+            },
+            "precio": 50,
+            "gratuito": false,
+            "categoria": ["Eletronica", "Rock", "POP"],
+            "Artista":[{
+                "nombre": "Fernando",
+                "estilo": "ELetronica"
+            },
+            {
+                "nombre": "Antonio",
+                "estilo": "Rock"
+            },
+            {
+                "nombre": "Ana",
+                "estilo": "POP"
+            }],
+            "estadoEvento":[
+                "pendiente",
+                "confirmado",
+                null
+            ]
+        }
+    ]
+}

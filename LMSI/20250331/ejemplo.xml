@@ -1,0 +1,113 @@
+<!-- quiero que me pongais los siguientes elementos:
+producto que contiene unicamente texto
+plus de salario que no contiene nada
+
+<!ELEMENT producto (#PCDATA)>
+
+<!ELEMENT plus de salario EMPTY> -->
+
+DTD INTERNO (HAGO LAS VALIDACIONES EN EL MISMO DOCUMENTO)
+ 
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empleados [
+    <!ELEMENT empleados (empleado+)>
+    <!ELEMENT empleado (nombre, apellido, salario)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido (#PCDATA)>
+    <!ELEMENT salario (#PCDATA)>
+]>
+<empleados>
+    <empleado>
+        <nombre>LUIS</nombre>
+        <apellido>SANCHEZ</apellido>
+        <salario>1000</salario>
+    </empleado>
+</empleados> -->
+ 
+DTD EXTERNO (HAGO LAS VALIDACIONES EN OTRO ARCHIVO DTD)
+ 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empleados SYSTEM "empleados.dtd">
+<empleados>
+    <empleado>
+        <nombre>LUIS</nombre>
+        <apellido>SANCHEZ</apellido>
+        <salario>1000</salario>
+    </empleado>
+</empleados>
+ 
+<!ELEMENT>
+ 
+PUEDE SER:
+    EMPTY no contiende contenido
+    ANY puede contener cualquier cosa
+    (#PCDATA) puede contener texto
+ 
+Contiene los elementos en ese mismo orden
+ 
+<!DOCTYPE libro [ <!ELEMENT libro (titulo, autor)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor EMPTY>
+]>
+ 
+Contiene uno de los dos elementos
+ 
+<!DOCTYPE libro [ <!ELEMENT libro (titulo | autor)>
+    <!ELEMENT titulo EMPTY>
+    <!ELEMENT autor (#PCDATA)>
+]>
+ 
+Contiene el segundo elemento puede aparecer
+ 
+<!DOCTYPE libro [ <!ELEMENT libro (titulo, autor?)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor EMPTY>
+]>
+ 
+El elemento puede aparecer una o mas de una vez
+ 
+<!DOCTYPE libro [ <!ELEMENT libro (titulo+)>
+    <!ELEMENT titulo (#PCDATA)>
+]>
+ 
+El elemento puede aparecer cero o mas de una vez
+ 
+<!DOCTYPE libro [ <!ELEMENT libro (titulo, autor*)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor EMPTY>
+]>
+ 
+<tienda>
+  <producto>
+    <nombre>Teclado</nombre>
+    <precio>25.99</precio>
+  </producto>
+  <producto>
+    <nombre>Ratón</nombre>
+    <precio>15.50</precio>
+  </producto>
+</tienda>
+ 
+<!ELEMENT tienda (producto+)>
+<!ELEMENT producto (nombre, precio)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+ 
+ 
+EJEMPLO FINAL CON DTD EXTERNA
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE eventos SYSTEM "eventos.dtd">
+<eventos>
+    <evento>
+        <nombre>FESTIVAL ELECTRO</nombre>
+        <invitado>
+            <persona>Luis</persona>
+        </invitado>
+        <invitado>Pilar</invitado>
+    </evento>
+ 
+    <evento>
+        <nombre>Expomanga</nombre>
+        <cancelado></cancelado>
+    </evento>
+</eventos>

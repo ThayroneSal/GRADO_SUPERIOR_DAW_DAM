@@ -1,0 +1,5 @@
+<!ELEMENT eventos (evento+)>
+<!ELEMENT evento (nombre, invitado*, cancelado?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT invitado ANY>
+<!ELEMENT cancelado EMPTY>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="empresa.xsd">
+
+    <nombre>Álvaro</nombre>
+    <sueldo>2000.2</sueldo>
+</empresa>
