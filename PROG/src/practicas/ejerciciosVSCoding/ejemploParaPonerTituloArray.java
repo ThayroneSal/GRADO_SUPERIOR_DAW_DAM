@@ -1,6 +1,3 @@
-
-
-
 public class ejemploParaPonerTituloArray {
     public static void main(String[] args) {
 
