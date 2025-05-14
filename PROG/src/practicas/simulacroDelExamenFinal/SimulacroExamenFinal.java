@@ -1,4 +1,5 @@
-package practicas.simulacroDelExamenFinal;
+package simulacroDelExamenFinal;
+
 
 import java.util.ArrayList;
 import java.util.List;
