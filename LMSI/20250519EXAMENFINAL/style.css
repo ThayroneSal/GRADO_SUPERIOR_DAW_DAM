@@ -1,0 +1,36 @@
+body {
+    max-width: 80%;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: yellow;
+    text-align: center;
+}
+
+.contenedor {
+    width: 60%;
+    margin: auto;
+    background-color: aqua;
+    
+}
+
+.fila2 {
+    display: flex;
+    gap: 20px;
+    max-width: 90%;
+    margin: auto;
+}
+
+@media (max-width: 760px) {
+    .contenedor {
+        width: 90%;
+        background-color: brown;
+        
+    }
+    .fila2 {
+        max-width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        
+    }
+}

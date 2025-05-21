@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <header>
@@ -11,7 +12,28 @@
 </header>
 
 <body>
-    
+    <div class="contenedor">
+        <div class="fila1">
+            <h1>CALCULO DE PORCENTAJE</h1>
+        </div>
+        <div class="fila2">
+            <div class="columna1">
+                <label for="number">Precio producto:</label>
+                <input type="numero" id="numero">
+            </div>
+            <div class="columna2">
+                <label for="porcentaje">Porcentaje:</label>
+                <input type="porcentaje" id="porcentaje">
+            </div>
+        </div>
+
+        <p>Resultado: <span id="resultado">0</span></p>
+        <button id="calcularBtn">Calcular</button>
+        <button id="limpiarBtn">Limpiar</button>
+
+    </div>
+
+    <script src = "script.js"></script>
 </body>
 
 <footer>
