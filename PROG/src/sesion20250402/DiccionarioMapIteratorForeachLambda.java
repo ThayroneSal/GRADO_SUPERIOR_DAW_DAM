@@ -35,13 +35,12 @@ public class DiccionarioMapIteratorForeachLambda {
             Map.Entry<String, Integer> mentry = iterator.next();
             System.out.println("Clave: " + mentry.getKey() + " - Valor: " + mentry.getValue());
         }
-
+        
         // Imprimir recorriendo con un bucle for-each:
         System.out.println("\nImprimiendo con bucle for-each (con entrySet): ");
         for (Map.Entry<String, Integer> entrada : palabrasQuijote.entrySet()) {
             System.out.println("Clave: " + entrada.getKey() + " - Valor " + entrada.getValue());
         }
-
 
         // Alternativa más moderna (Java 8+) con una expresión lambda:
         System.out.println("\nImprimiendo con bucle for-each (expresión lambda): ");
