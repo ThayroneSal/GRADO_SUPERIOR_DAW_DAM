@@ -1,0 +1,16 @@
+{
+    "ciclo": "DAM",
+    "curso": [
+        {
+            "horas": 6,
+            "nombre": "Acceso a Datos",
+            "nota": 8.45
+        },
+        {
+            "horas": 3,
+            "nombre": "Programación",
+            "nota": 9
+        }
+    ],
+    "año": 2
+}

@@ -1,0 +1,8 @@
+{
+  "ciclo": "DAM",
+  "nivel": 2,
+  "curso": [
+    { "nombre": "Acceso a Datos", "horas": 6, "nota": 8.45 },
+    { "nombre": "Programación de servicios", "horas": 3, "nota": 9.0 }
+  ]
+}
