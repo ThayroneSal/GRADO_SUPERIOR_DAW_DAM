@@ -1,0 +1,3 @@
+Hola mundo desde un fichero de texto en la que ponemos siempre la misma linea.
+Segunda línea de prueba, ofu cuanto texto.
+Tercera línea y fin.

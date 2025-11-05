@@ -50,9 +50,28 @@ public class ejercicioExamenMasaPan2 {
         }while(intento<8);
         entrada.close();
     }
+    
 }
 
 
+
+/*tablero [2][0] = "*";
+tablero [2][1] = "*";
+tablero [2][2] = "*";
+tablero [2][3] = "*";
+tablero [2][4] = "*";
+
+tablero [3][0] = "*";
+tablero [3][1] = "*";
+tablero [3][2] = "*";
+tablero [3][3] = "*";
+tablero [3][4] = "*";
+
+tablero [4][0] = "*";
+tablero [4][1] = "*";
+tablero [4][2] = "*";
+tablero [4][3] = "*";
+tablero [4][4] = "*"; */
 
 
 
